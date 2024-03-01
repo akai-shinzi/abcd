@@ -17,6 +17,16 @@ body {
   color: #fff;
 }
 
+a {
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid #00C4F4;
+    color: #fff;
+    opacity: 0.6 !important;
+  }
+}
 .upper-case {
   text-transform: uppercase;
 }
@@ -78,21 +88,16 @@ body {
   }
 }
 
+.nav-selected {
+  border-bottom: 2px solid #00C4F4;
+}
+
 .header-nav {
   padding: 0px;
   color: #fff;
 
   .nav-selected {
     border-bottom: 2px solid #00C4F4;
-  }
-
-  a {
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    &:hover {
-      border-bottom: 2px solid #00C4F4;
-      opacity: 0.6;
-    }
   }
 }
 

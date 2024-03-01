@@ -19,22 +19,43 @@ import Tag from "../components/Tag";
 import Footer from "../components/Footer";
 
 const menuLeftData = [
-    'TECHNISCHES PAPIER (7)',
-    'LEARN ABOUT GAMAX ALGORITHM (3)',
-    'OPEN WALLET & REGISTER (6)',
-    'INVESTMENT GUIDELINES (7)',
-    'CONNECT GAMAX ALGORITHM (8)',
-    'WITHDRAW TO WALLET (2)',
-    'CRYPTO KNOWLEDGE (4)',
-    'BFi TOKEN (3)',
-    'NOTIFICATIONS (3)',
-    'FAQS (4)'
+    {
+        title: 'TECHNISCHES PAPIER (7)',
+    },
+    {
+        title: 'LEARN ABOUT GAMAX ALGORITHM (3)',
+        link: './blog-details.html',
+    },
+    {
+        title: 'OPEN WALLET & REGISTER (6)',
+    },
+    {
+        title: 'INVESTMENT GUIDELINES (7)',
+    },
+    {
+        title: 'CONNECT GAMAX ALGORITHM (8)',
+    },
+    {
+        title: 'WITHDRAW TO WALLET (2)',
+    },
+    {
+        title: 'CRYPTO KNOWLEDGE (4)',
+    },
+    {
+        title: 'BFi TOKEN (3)',
+    },
+    {
+        title: 'NOTIFICATIONS (3)',
+    },
+    {
+        title: 'FAQS (4)',
+    }
 ]
 
 export default function Blog() {
     return (
         <>
-            <NavMenu />
+            <NavMenu name="blog" />
 
             <div className="container position-relative">
 
@@ -57,12 +78,12 @@ export default function Blog() {
 
                 <FlexBetween className="main-logo container-gap">
                     <FlexColumn className="blog-menu col-4">
-                        {menuLeftData.map((item, index) => {
-                            return <div key={index}
+                        {menuLeftData.map((item) => {
+                            return <div key={item.title}
                                 className="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600"
                             >
                                 <div><img src={chevIcon} width={16} height={16} /></div>
-                                <div>{item}</div>
+                                <a href={item.link} >{item.title}</a>
                             </div>
                         })}
                     </FlexColumn>

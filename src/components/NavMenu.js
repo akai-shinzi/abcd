@@ -1,8 +1,11 @@
 import React from 'react'
 import DivButton from './DivButton'
 import DivTag from './DivTag'
+import clsx from 'clsx'
 
-const NavMenu = () => {
+const NavMenu = ({
+    name
+}) => {
     return (
         <div className="container d-flex flex-row justify-content-md-between justify-content-center mt-3">
             <DivTag
@@ -13,13 +16,13 @@ const NavMenu = () => {
                             <i className="fa fa-bars"></i>
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item nav-selected" href="#">About us</a>
+                            <a className="dropdown-item" href="#">About us</a>
                             <a className="dropdown-item" href="#">Document</a>
                             <a className="dropdown-item" href="#">Network</a>
                             <a className="dropdown-item" href="#">Token</a>
                             <a className="dropdown-item" href="#">Exchange</a>
                             <a className="dropdown-item" href="#">Contact</a>
-                            <a className="dropdown-item" href="#">Blog</a>
+                            <a className="dropdown-item" href="./blog.html">Blog</a>
                         </div>
                     </>
                 }
@@ -31,13 +34,13 @@ const NavMenu = () => {
                 classNameWeb="d-md-flex justify-content-center align-items-center header-nav gap-16 gap-sm-8"
                 webContent={
                     <>
-                        <a className="nav-selected">About us</a>
+                        <a className={clsx(name === '/' ? 'nav-selected' : '')} href='/'>About us</a>
                         <a>Document</a>
                         <a>Network</a>
                         <a>Token</a>
                         <a>Exchange</a>
                         <a>Contact</a>
-                        <a>Blog</a>
+                        <a className={clsx(name === 'blog' ? 'nav-selected' : '')} href="./blog.html">Blog</a>
                     </>
                 }
             />

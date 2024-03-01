@@ -18,7 +18,7 @@ import Footer from "../components/Footer";
 export default function BlogDetails() {
     return (
         <>
-            <NavMenu />
+            <NavMenu name="blog" />
 
             <div className="container position-relative">
                 <div className="container-gap">

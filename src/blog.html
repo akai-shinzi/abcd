@@ -56,6 +56,8 @@
             @media (max-width: 767px) {
             .blog-menu {
             display: none !important; } }
+            .blog-menu a {
+            text-decoration: none; }
             .block-coint {
             width: 294px;
             height: 84px;
@@ -105,6 +107,14 @@
             color: #CAC6DD; }
             .text-white {
             color: #fff; }
+            a {
+            color: #fff;
+            cursor: pointer;
+            border-bottom: 2px solid transparent; }
+            a:hover {
+            border-bottom: 2px solid #00C4F4;
+            color: #fff;
+            opacity: 0.6 !important; }
             .upper-case {
             text-transform: uppercase; }
             .container-gap {
@@ -142,17 +152,13 @@
             @media (max-width: 767px) {
             .main-logo .main-shadow {
             display: none; } }
+            .nav-selected {
+            border-bottom: 2px solid #00C4F4; }
             .header-nav {
             padding: 0px;
             color: #fff; }
             .header-nav .nav-selected {
             border-bottom: 2px solid #00C4F4; }
-            .header-nav a {
-            cursor: pointer;
-            border-bottom: 2px solid transparent; }
-            .header-nav a:hover {
-            border-bottom: 2px solid #00C4F4;
-            opacity: 0.6; }
             .app-button {
             max-width: 240px;
             height: 48px;
@@ -184,7 +190,7 @@
             height: 1px;
             background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%); }
             .region-box-logo {
-            background-image: url(./assets/background-algorithm.svg);
+            background-image: url(./assets/background.svg);
             background-size: 100% 100%;
             background-repeat: no-repeat;
             width: 100%;
@@ -1237,9 +1243,6 @@
             @media (max-width: 767px) {
             h5 {
             font-size: 16px; } }
-            .nav-selected {
-              border-bottom: 2px solid #00C4F4;
-            }
         </style>
     </head>
     <body cz-shortcut-listen="true">
@@ -1250,10 +1253,10 @@
             <div class="container d-flex flex-row justify-content-md-between justify-content-center mt-3">
                 <div class="d-sm-block d-md-none nav-menu-mobile">
                     <a class="nav-link dropdown-toggle icon" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">About us</a><a class="dropdown-item" href="#">Document</a><a class="dropdown-item" href="#">Network</a><a class="dropdown-item" href="#">Token</a><a class="dropdown-item" href="#">Exchange</a><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item nav-selected" href="#">Blog</a></div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">About us</a><a class="dropdown-item" href="#">Document</a><a class="dropdown-item" href="#">Network</a><a class="dropdown-item" href="#">Token</a><a class="dropdown-item" href="#">Exchange</a><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="./blog.html">Blog</a></div>
                 </div>
                 <div class="header-logo"></div>
-                <div class="d-none d-sm-none d-md-block d-md-flex justify-content-center align-items-center header-nav gap-16 gap-sm-8"><a class="nav-selected">About us</a><a>Document</a><a>Network</a><a>Token</a><a>Exchange</a><a>Contact</a><a>Blog</a></div>
+                <div class="d-none d-sm-none d-md-block d-md-flex justify-content-center align-items-center header-nav gap-16 gap-sm-8"><a class="" href="/">About us</a><a>Document</a><a>Network</a><a>Token</a><a>Exchange</a><a>Contact</a><a class="nav-selected" href="./blog.html">Blog</a></div>
                 <div class="d-none d-xs-none d-sm-none d-lg-flex">
                     <div class="d-flex justify-content-center align-items-center btn app-button">Launch App</div>
                 </div>
@@ -1273,43 +1276,43 @@
                     <div class="d-flex flex-column blog-menu col-4">
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>TECHNISCHES PAPIER (7)</div>
-                        </div>
-                        <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600 nav-selected">
-                            <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>LEARN ABOUT GAMAX ALGORITHM (3)</div>
+                            <a>TECHNISCHES PAPIER (7)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>OPEN WALLET &amp; REGISTER (6)</div>
+                            <a href="./blog-details.html">LEARN ABOUT GAMAX ALGORITHM (3)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>INVESTMENT GUIDELINES (7)</div>
+                            <a>OPEN WALLET &amp; REGISTER (6)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>CONNECT GAMAX ALGORITHM (8)</div>
+                            <a>INVESTMENT GUIDELINES (7)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>WITHDRAW TO WALLET (2)</div>
+                            <a>CONNECT GAMAX ALGORITHM (8)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>CRYPTO KNOWLEDGE (4)</div>
+                            <a>WITHDRAW TO WALLET (2)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>BFi TOKEN (3)</div>
+                            <a>CRYPTO KNOWLEDGE (4)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>NOTIFICATIONS (3)</div>
+                            <a>BFi TOKEN (3)</a>
                         </div>
                         <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
                             <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
-                            <div>FAQS (4)</div>
+                            <a>NOTIFICATIONS (3)</a>
+                        </div>
+                        <div class="nav-memu-lelf d-flex flex-row font-size-14 font-weight-600">
+                            <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB3ZBBCgAgCASXXuoP8gf5czPyWFB2CQc8yayyQE5UlWwqopjMOmmIYrJ8F8KrfTnJQJTxul8X3PIqc1j2ANqVlpAOEd5bGqWTgOYAAAAASUVORK5CYII=" width="16" height="16"></div>
+                            <a>FAQS (4)</a>
                         </div>
                     </div>
                     <div class="col-md-8 col-12 text-white text-md-left text-center">
@@ -1380,5 +1383,16 @@
                 </div>
             </div>
         </div>
+        <!--
+            This HTML file is a template.
+            If you open it directly in the browser, you will see an empty page.
+            
+            You can add webfonts, meta tags, or analytics to this file.
+            The build step will place the bundled scripts into the <body> tag.
+            
+            To begin the development, run `npm start` or `yarn start`.
+            To create a production bundle, use `npm run build` or `yarn build`.
+            -->
+        <script src="/static/js/bundle.js"></script><script src="/static/js/1.chunk.js"></script><script src="/static/js/main.chunk.js"></script><script src="/main.043e0d34c27e05520a4d.hot-update.js"></script>
     </body>
 </html>

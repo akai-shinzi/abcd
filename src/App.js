@@ -6,11 +6,6 @@ import "./styles.scss";
 import assetsLogo from './assets/client-logo.png';
 import mainLogo from './assets/main-brainwave-hero-app.svg';
 
-import mailIcon from './assets/icon-mail.png';
-import flyIcon from './assets/icon-fly.png';
-import infoIcon from './assets/icon-info.png';
-
-
 import Tag from "./components/Tag";
 import { FlexBetween, FlexCenter, FlexColumn, FlexFullCenter, FlexMidCenter } from "./components/Flex";
 import DivButton from "./components/DivButton";
@@ -35,7 +30,7 @@ export default function App() {
     return <BlogDetails />
     return (
         <>
-            <NavMenu />
+            <NavMenu name="/" />
 
             <div className="container position-relative">
                 <div className="title-logo"></div>

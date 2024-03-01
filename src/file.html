@@ -56,6 +56,8 @@
             @media (max-width: 767px) {
             .blog-menu {
             display: none !important; } }
+            .blog-menu a {
+            text-decoration: none; }
             .block-coint {
             width: 294px;
             height: 84px;
@@ -105,6 +107,14 @@
             color: #CAC6DD; }
             .text-white {
             color: #fff; }
+            a {
+            color: #fff;
+            cursor: pointer;
+            border-bottom: 2px solid transparent; }
+            a:hover {
+            border-bottom: 2px solid #00C4F4;
+            color: #fff;
+            opacity: 0.6 !important; }
             .upper-case {
             text-transform: uppercase; }
             .container-gap {
@@ -142,17 +152,13 @@
             @media (max-width: 767px) {
             .main-logo .main-shadow {
             display: none; } }
+            .nav-selected {
+            border-bottom: 2px solid #00C4F4; }
             .header-nav {
             padding: 0px;
             color: #fff; }
             .header-nav .nav-selected {
             border-bottom: 2px solid #00C4F4; }
-            .header-nav a {
-            cursor: pointer;
-            border-bottom: 2px solid transparent; }
-            .header-nav a:hover {
-            border-bottom: 2px solid #00C4F4;
-            opacity: 0.6; }
             .app-button {
             max-width: 240px;
             height: 48px;
@@ -1238,7 +1244,6 @@
             h5 {
             font-size: 16px; } }
         </style>
-        <script charset="utf-8" src="/main.ad538e326824be124a32.hot-update.js"></script><script charset="utf-8" src="/main.6935b63ad474a66a1fd4.hot-update.js"></script><script charset="utf-8" src="/main.fe5aac03aa46e459f935.hot-update.js"></script><script charset="utf-8" src="/main.92ec48dd2aa517580565.hot-update.js"></script><script charset="utf-8" src="/main.40e2c82b7d166129117f.hot-update.js"></script><script charset="utf-8" src="/main.671fd905397d7f0e3e15.hot-update.js"></script><script charset="utf-8" src="/main.bef512b7d6c6d9bca84a.hot-update.js"></script><script charset="utf-8" src="/main.a40ba16a0a1989bead56.hot-update.js"></script><script charset="utf-8" src="/main.ed335aa12feed6686268.hot-update.js"></script><script charset="utf-8" src="/main.0dfa79a4ab3e206ca5c0.hot-update.js"></script><script charset="utf-8" src="/main.39998e97014f56b86ce9.hot-update.js"></script><script charset="utf-8" src="/main.8844f62f43a3c9a8ac1e.hot-update.js"></script><script charset="utf-8" src="/main.0b7b738fde9917757cda.hot-update.js"></script><script charset="utf-8" src="/main.9f2733f0418c686ac7de.hot-update.js"></script><script charset="utf-8" src="/main.d2d1c82f7603900213f7.hot-update.js"></script><script charset="utf-8" src="/main.3f4365c9e50809752fe0.hot-update.js"></script><script charset="utf-8" src="/main.537b2683c8f36eb1306e.hot-update.js"></script><script charset="utf-8" src="/main.ec619be97f7730aa06bd.hot-update.js"></script>
     </head>
     <body cz-shortcut-listen="true">
         <noscript>
@@ -1248,10 +1253,10 @@
             <div class="container d-flex flex-row justify-content-md-between justify-content-center mt-3">
                 <div class="d-sm-block d-md-none nav-menu-mobile">
                     <a class="nav-link dropdown-toggle icon" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item nav-selected" href="#">About us</a><a class="dropdown-item" href="#">Document</a><a class="dropdown-item" href="#">Network</a><a class="dropdown-item" href="#">Token</a><a class="dropdown-item" href="#">Exchange</a><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="#">Blog</a></div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">About us</a><a class="dropdown-item" href="#">Document</a><a class="dropdown-item" href="#">Network</a><a class="dropdown-item" href="#">Token</a><a class="dropdown-item" href="#">Exchange</a><a class="dropdown-item" href="#">Contact</a><a class="dropdown-item" href="./blog.html">Blog</a></div>
                 </div>
                 <div class="header-logo"></div>
-                <div class="d-none d-sm-none d-md-block d-md-flex justify-content-center align-items-center header-nav gap-16 gap-sm-8"><a class="nav-selected">About us</a><a>Document</a><a>Network</a><a>Token</a><a>Exchange</a><a>Contact</a><a>Blog</a></div>
+                <div class="d-none d-sm-none d-md-block d-md-flex justify-content-center align-items-center header-nav gap-16 gap-sm-8"><a class="nav-selected" href="/">About us</a><a>Document</a><a>Network</a><a>Token</a><a>Exchange</a><a>Contact</a><a class="" href="./blog.html">Blog</a></div>
                 <div class="d-none d-xs-none d-sm-none d-lg-flex">
                     <div class="d-flex justify-content-center align-items-center btn app-button">Launch App</div>
                 </div>
@@ -1375,19 +1380,19 @@
                         <div class="d-flex flex-column gap-12 mb-4">
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Technical Paper</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Privacy &amp; Policy</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Risk Warning</div>
                                 </div>
                             </div>
@@ -1408,28 +1413,28 @@
                         <div class="d-flex flex-column gap-12 mb-4">
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Investment</div>
                                     <div class="text-hight-light">30%</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Network Revenue</div>
                                     <div class="text-hight-light">20%</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Network Member</div>
                                     <div class="text-hight-light">5%</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Investor Commission</div>
                                     <div class="text-hight-light">9%</div>
                                 </div>
@@ -1453,31 +1458,31 @@
                         <div class="d-flex flex-column gap-12 mb-4">
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Build On Blockchain Technology</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Pair &amp; Security</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Share From The Platform's Profits</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Strong Supportive Community</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>All The World</div>
                                 </div>
                             </div>
@@ -1498,37 +1503,37 @@
                         <div class="d-flex flex-column gap-12 mb-4">
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Release 1.000.000 BFi Tokens</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Profit is distributed quaterly</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Profit is distributed quaterly</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Token Price Increase</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Easy Exchange</div>
                                 </div>
                             </div>
                             <div class="d-flex gap-20 pb-3">
                                 <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                     <div>Own Sustainable Profit</div>
                                 </div>
                             </div>
@@ -1552,31 +1557,31 @@
                             <div class="d-flex flex-column gap-12 mb-4">
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Trading 24/7 realtime</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Liquidity pool</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Tokens Sale On Exchange</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Easy Buy/Sell</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Quaterly distributed</div>
                                     </div>
                                 </div>
@@ -1587,31 +1592,31 @@
                             <div class="d-flex flex-column gap-12 mb-4">
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Strong Community</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Flexibility Connect Wallet</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Share 20% Total Profit for Tokens</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Tokens Limited</div>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-20 pb-3">
                                     <div><img src="./assets/tick-icon.svg" width="24" height="24"></div>
-                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 col-8 text-white font-weight-400">
+                                    <div class="d-flex flex-row justify-content-between d-flex font-size-16 font-size-sm-14 col-sm-12 col-md-8 text-white font-weight-400">
                                         <div>Share Tokens for others easily</div>
                                     </div>
                                 </div>
@@ -1673,5 +1678,16 @@
                 </div>
             </div>
         </div>
+        <!--
+            This HTML file is a template.
+            If you open it directly in the browser, you will see an empty page.
+            
+            You can add webfonts, meta tags, or analytics to this file.
+            The build step will place the bundled scripts into the <body> tag.
+            
+            To begin the development, run `npm start` or `yarn start`.
+            To create a production bundle, use `npm run build` or `yarn build`.
+            -->
+        <script src="/static/js/bundle.js"></script><script src="/static/js/0.chunk.js"></script><script src="/static/js/main.chunk.js"></script>
     </body>
 </html>

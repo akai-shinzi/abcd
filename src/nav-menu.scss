@@ -52,6 +52,9 @@
     @media (max-width: 767px) {
         display: none !important;
     }
+    a {
+        text-decoration: none;
+    }
 }
 
 .block-coint {
